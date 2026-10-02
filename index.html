@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSAME 2026 - NERIST</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top" data-bs-theme="dark">
+        <div class="container-fluid px-2 px-lg-3">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.png" alt="Logo" height="65" class="me-2">
+                <span>SSAME 2026</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center text-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/brochure.html">Brochure</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/tracks.html">Tracks</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="pages/cfp.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Call for Papers
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="pages/cfp.html">Call for Papers</a></li>
+                            <li><a class="dropdown-item" href="pages/authorguideline.html">Authors Guidelines</a></li>
+                            <li><a class="dropdown-item" href="pages/publication_partner.html">Publication Partner</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="organizingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Organizing Committee
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="organizingDropdown">
+                            <li><a class="dropdown-item" href="pages/advisory.html">Advisory Committee</a></li>
+                            <li><a class="dropdown-item" href="pages/organising_team.html">Organizing Team</a></li>
+                            <li><a class="dropdown-item" href="pages/organising_committee.html">Organizing Committee</a>
+                            </li>
+                            <li><a class="dropdown-item" href="pages/local_advisory.html">Local Advisory Committee</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="pages/awards.html">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/speakers.html">Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/sponsorship.html">Sponsorship</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact Us</a></li>
+                    <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
+                        <a class="btn btn-primary-custom btn-blinking text-white rounded-pill px-3"
+                            href="https://cmt3.research.microsoft.com/SSAME2026/Submission/Index" target="_blank">Paper
+                            Submission</a>
+                    </li>
+                    <li class="nav-item mt-3 mt-lg-0 ms-lg-2 mb-3 mb-lg-0">
+                        <a class="btn btn-primary-custom btn-blinking text-white rounded-pill px-3"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScTSzQ3UIJNgyaa9BfXZntLS6e64-aJzm8WxK6mWrXjI_UI2A/viewform"
+                            target="_blank">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/jubilee.jpg" class="d-block w-100" alt="Jubilee">
+            </div>
+            <!-- Using existing images from the old carousel structure, ensuring they exist or fallback -->
+            <div class="carousel-item">
+                <img src="assets/images/1.jpg" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/2.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <!-- Overlay Content -->
+        <div class="carousel-caption d-flex align-items-center justify-content-center h-100"
+            style="bottom: 0; left: 0; right: 0; top: 0; background: linear-gradient(rgba(0,21,64,0.6), rgba(0,0,0,0.85));">
+            <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 gap-xl-4">
+                
+                <!-- Left Logo: NERIST -->
+                <div class="d-none d-lg-block text-center">
+                    <div class="p-1 rounded-circle" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2);">
+                        <img src="assets/images/nerist_logo.png" alt="NERIST Logo" style="height: 180px; width: 180px; object-fit: contain;"
+                            class="bg-white rounded-circle p-2 shadow-lg">
+                    </div>
+                </div>
+
+                <!-- Center Text -->
+                <div class="text-center px-3 py-4 py-xl-5 rounded-4 shadow-lg mx-2" 
+                    style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); max-width: 850px; width: 100%;">
+                    <h1 class="fw-bold text-white text-uppercase mb-2" style="font-size: 2.1rem; letter-spacing: 1px; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+                        International Conference on Smart, Sustainable & Advanced Materials in Engineering
+                    </h1>
+                    <h2 class="fw-bold mt-2" style="color: var(--secondary-color); font-size: 2.4rem; text-shadow: 0 0 20px rgba(252,163,17,0.4);">
+                        (SSAME-2026)
+                    </h2>
+                    
+                    <hr class="w-25 mx-auto border-light opacity-50 my-3 my-xl-4" style="border-top: 2px solid #fff;">
+                    
+                    <p class="h5 text-white fw-medium mb-2"><i class="far fa-calendar-alt me-2" style="color: var(--secondary-color);"></i> 13th - 14th November 2026</p>
+                    <p class="h6 text-white fw-normal mb-0 opacity-75"><i class="fas fa-map-marker-alt me-2 text-info"></i> NERIST, Arunachal Pradesh, India</p>
+
+                    <div class="mt-4 pt-2 d-flex justify-content-center gap-2 flex-wrap">
+                        <a href="https://cmt3.research.microsoft.com/SSAME2026/Submission/Index" target="_blank" class="btn btn-primary-custom rounded-pill shadow-lg d-inline-flex align-items-center justify-content-center fw-bold" style="min-width: 200px; padding: 12px 25px; gap: 8px; color: var(--primary-color) !important;">
+                            <i class="fas fa-paper-plane"></i> Submit Abstract
+                        </a>
+                        <a href="pages/brochure.html" class="btn btn-outline-light btn-brochure rounded-pill shadow-lg fw-bold d-inline-flex align-items-center justify-content-center" style="border-width: 2px; min-width: 200px; padding: 12px 25px; gap: 8px;">
+                            <i class="fas fa-book-open"></i> View Brochure
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Logo: Conference -->
+                <div class="d-none d-lg-block text-center">
+                    <div class="p-1 rounded-circle" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2);">
+                        <img src="assets/images/SSAMElogo.png" alt="SSAME Logo" style="height: 190px; width: 190px; object-fit: contain;"
+                            class="bg-white rounded-circle p-2 shadow-lg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Links / Marquee -->
+    <div class="py-3 shadow position-relative" style="background: var(--primary-color); border-bottom: 4px solid var(--secondary-color); z-index: 10;">
+        <div class="container d-flex align-items-center">
+            <span class="badge flex-shrink-0 me-3 px-3 py-2 rounded-pill shadow" style="background: var(--secondary-color); color: #001540; font-size: 13px; font-weight: 700;"><i class="fas fa-bolt me-1 text-danger"></i> LATEST NEWS</span>
+            <div class="flex-grow-1 overflow-hidden">
+                <marquee class="text-white fw-medium mb-0 w-100" style="font-size: 14.5px; letter-spacing: 0.5px;" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                ðŸŒ SSAME 2026 â€“ International Conference on Smart, Sustainable & Advanced Materials in Engineering |
+                13th - 14th November 2026, NERIST, Arunachal Pradesh, India.
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                ðŸ“¢ Organized by Department of Civil & Mechanical Engineering, NERIST (Deemed-to-be University under
+                Ministry of Education, Govt. of India).
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                ðŸ“ Abstract Submission Open: 15 October 2026.
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                ðŸ“„ Full-Length Paper Submission Deadline: 20 October 2026.
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                ðŸ“‘ Camera-Ready Paper Submission Deadline: 25 October 2026
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                ðŸ’° Early Bird Registration Ends: 25 October 2026.
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                â³ Regular Registration Begins: 26 October 2026.
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                âœ… Last Date to Register for SSAME 2026: 10 November 2026.
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                ðŸ”¬ Conference covers Smart Materials, Sustainable Technologies, Advanced Manufacturing, and Intelligent
+                Infrastructure.
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                ðŸŒ± Special Focus on Sustainability, Climate-Resilient Infrastructure, and Green Engineering Materials.
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                ðŸ¤– Dedicated Track on AI, Machine Learning, Digital Twins, and Data-Driven Materials Engineering.
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                ðŸ— Tracks include Advanced Geomaterials, Smart Infrastructure, Advanced Manufacturing, Nanomaterials,
+                Energy Materials, and Reliability Engineering.
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                ðŸ§ª Special Sessions on WAAM Materials, Additive Manufacturing, and Microstructure Optimization.
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                ðŸŒ Global platform for researchers, academicians, industry professionals, and policymakers.
+                &nbsp;&nbsp;&nbsp;â€¢â€¢â€¢&nbsp;&nbsp;&nbsp;
+                ðŸ† Best Paper & poster Awards and Best Thesis (UG/PG/PhD) Awards will be presented.
+            </marquee></div>
+            <a href="https://cmt3.research.microsoft.com/SSAME2026/Submission/Index" target="_blank"
+                class="btn btn-primary-custom ms-3 flex-shrink-0 fw-bold shadow-sm" style="padding: 8px 18px; border-radius: 50px;"><i class="fas fa-paper-plane me-2"></i> Submit Paper</a>
+        </div>
+    </div>
+
+    <!-- About Conference -->
+    <section class="section-padding" id="about">
+        <div class="container">
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="card-body p-4 p-md-5">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold text-primary mb-3">About Conference</h2>
+                        <div class="mx-auto" style="width: 80px; height: 4px; background: var(--secondary-color); border-radius: 2px;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="text-justify text-muted fs-6" style="line-height: 1.8;">
+                                The Department of Civil & Mechanical Engineering, North Eastern Regional Institute of Science
+                                and Technology (NERIST), Nirjuli, Arunachal Pradeshâ€”an institution deemed to be a University
+                                under Section 3 of the UGC Act, 1956 and functioning under the Ministry of Education, Government
+                                of Indiaâ€”proposes to organize a Two-Day International Conference on â€œSmart, Sustainable &
+                                Advanced Materials in Engineeringâ€ on 13th - 14th November 2026.
+                            </p>
+                            <div class="collapse" id="aboutConferenceCollapse">
+                                <p class="text-justify text-muted fs-6" style="line-height: 1.8;">
+                                    The conference aims to provide a premier international platform for the exchange and
+                                    dissemination of cutting-edge research, innovative ideas, and technological advancements in
+                                    the broad domain of engineering materials. Emphasis will be placed on smart, sustainable,
+                                    and advanced materials that are shaping the future of civil, mechanical, and allied
+                                    engineering disciplines. The event seeks to foster interdisciplinary dialogue and global
+                                    academic collaboration while addressing pressing challenges related to sustainability,
+                                    resilience, digitalization, and advanced manufacturing.
+                                </p>
+                                <p class="text-justify text-muted fs-6" style="line-height: 1.8;">
+                                    The conference will bring together leading researchers, academicians, scientists,
+                                    policymakers, and industry professionals from India and abroad to deliberate on emerging
+                                    trends, novel methodologies, and real-world applications of advanced materials in
+                                    infrastructure, manufacturing, energy, and environmental systems. Through keynote lectures,
+                                    invited talks, technical paper presentations, and interactive sessions, the conference will
+                                    encourage knowledge sharing, networking, and the development of collaborative research
+                                    initiatives.
+                                </p>
+                                <p class="text-justify text-muted fs-6 mb-0" style="line-height: 1.8;">
+                                    With a strong focus on themes such as intelligent geomaterials, smart civil infrastructure,
+                                    additive and hybrid manufacturing, nanomaterials, data-driven materials engineering, and
+                                    sustainable technologies, the conference aspires to contribute meaningfully to the
+                                    advancement of engineering science and practice, while aligning with national and global
+                                    priorities for sustainable development and technological innovation.
+                                </p>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button class="btn btn-outline-custom rounded-pill px-4 fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#aboutConferenceCollapse" aria-expanded="false"
+                                    aria-controls="aboutConferenceCollapse" onclick="toggleReadMore(this)">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Institute & Departments -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row g-4 align-items-stretch">
+                <!-- About Institute -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg rounded-4 h-100 overflow-hidden">
+                        <div class="card-body p-4 p-md-5 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="p-3 rounded-circle me-3" style="background: rgba(0, 21, 64, 0.05);">
+                                    <i class="fas fa-university fs-3" style="color: var(--primary-color);"></i>
+                                </div>
+                                <h3 class="fw-bold mb-0 text-primary">About The Institute</h3>
+                            </div>
+                            <p class="text-justify text-muted" style="line-height: 1.8;">
+                                The North Eastern Regional Institute of Science and Technology (NERIST) is a premier science and
+                                technologyâ€“oriented higher education institute located at Nirjuli, Itanagar, Arunachal Pradesh.
+                                Established by the Government of India in 1984, NERIST is an autonomous, fully residential
+                                institute, funded and controlled by the Ministry of Education, Government of India, and has been
+                                accorded the status of a Deemed-to-be-University under Section 3 of the UGC Act, 1956 since May
+                                2005. Spread across a scenic 513-acre campus, the Institute provides a vibrant academic and
+                                research environment in the heart of the North-Eastern region of India.
+                            </p>
+                            <div class="collapse" id="aboutInstituteCollapse">
+                                <p class="text-justify text-muted mt-2" style="line-height: 1.8;">
+                                    NERIST is unique in the country for its innovative modular system of education, designed to
+                                    develop technical manpower at technician, supervisory, and executive levels. Academic
+                                    programmes began in 1986, and the Institute currently offers undergraduate, postgraduate,
+                                    and doctoral programmes in major engineering and science disciplines, including
+                                    Agricultural, Civil, Mechanical, Electrical, Electronics & Communication, Computer Science &
+                                    Engineering, and Forestry. The undergraduate engineering programmes are accredited by the
+                                    National Board of Accreditation (NBA). Over the years, NERIST graduates have distinguished
+                                    themselves in leading national and international organizations, academia, research
+                                    institutions, and entrepreneurship.
+                                </p>
+                                <p class="text-justify text-muted mt-2" style="line-height: 1.8;">
+                                    Governed by a Board of Management comprising representatives from the Ministry of Education,
+                                    AICTE, the eight beneficiary North-Eastern states, and eminent educationists, the Institute
+                                    plays a vital role in regional and national development. With strong emphasis on quality
+                                    education, research and development, innovation, entrepreneurship, and community outreach,
+                                    NERIST actively contributes to capacity building, sustainable development, and technological
+                                    advancementâ€”particularly tailored to the socio-economic and environmental needs of the
+                                    North-Eastern region of India, while maintaining global standards in science and engineering
+                                    education.
+                                </p>
+                            </div>
+                            <div class="mt-auto pt-4 text-center border-top border-light-subtle">
+                                <button class="btn btn-outline-custom rounded-pill px-4 fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#aboutInstituteCollapse" aria-expanded="false"
+                                    aria-controls="aboutInstituteCollapse" onclick="toggleReadMore(this)">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Departments -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg rounded-4 h-100 overflow-hidden">
+                        <div class="card-body p-4 p-md-5 d-flex flex-column">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="p-3 rounded-circle me-3" style="background: rgba(0, 21, 64, 0.05);">
+                                    <i class="fas fa-building fs-3" style="color: var(--primary-color);"></i>
+                                </div>
+                                <h3 class="fw-bold mb-0 text-primary">About Departments</h3>
+                            </div>
+                            
+                            <!-- Civil Engineering -->
+                            <div class="mb-4">
+                                <h5 class="text-primary fw-bold border-bottom border-warning border-3 pb-1 d-inline-block mb-3">Civil Engineering</h5>
+                                <p class="text-justify text-muted" style="line-height: 1.8;">
+                                    The Department of Civil Engineering at North Eastern Regional Institute of Science and
+                                    Technology (NERIST), Nirjuli has been an integral part of the Institute since its inception in
+                                    1985 and is recognized as one of the leading civil engineering departments in the North-Eastern
+                                    region of India.
+                                </p>
+                                <div class="collapse" id="civilDeptCollapse">
+                                    <p class="text-justify text-muted mt-2" style="line-height: 1.8;">
+                                        The department is committed to developing high-quality technical manpower through its
+                                        modular academic structure, offering Certificate, Diploma, and B.Tech. programmes, followed
+                                        by postgraduate programmes (M.Tech. in Environmental Science & Engineering and Geotechnical
+                                        Engineering) and Ph.D. The B.Tech. programme is accredited by the National Board of
+                                        Accreditation (NBA), reflecting the departmentâ€™s strong academic standards and outcome-based
+                                        education.
+                                    </p>
+                                    <p class="text-justify text-muted mt-2" style="line-height: 1.8;">
+                                        The department comprises 16 well-qualified faculty members with expertise spanning major
+                                        domains of civil engineering. Its laboratories are well equipped to support undergraduate
+                                        and postgraduate teaching as well as advanced doctoral research. In addition to academics,
+                                        the department actively undertakes sponsored research projects and consultancy assignments,
+                                        addressing real-world engineering challenges. Through workshops, short-term training
+                                        programmes, and conferences, the department plays a vital role in knowledge dissemination
+                                        among academicians, government officials, NGOs, and local communitiesâ€”particularly
+                                        contributing to sustainable infrastructure development in Arunachal Pradesh and the
+                                        North-Eastern region.
+                                    </p>
+                                </div>
+                                <div class="text-start mt-2">
+                                    <button class="btn btn-sm btn-light text-primary fw-bold rounded-pill px-3 shadow-sm border" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#civilDeptCollapse" aria-expanded="false" aria-controls="civilDeptCollapse"
+                                        onclick="toggleReadMore(this)">
+                                        Read More
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Mechanical Engineering -->
+                            <div class="mb-2">
+                                <h5 class="text-primary fw-bold border-bottom border-warning border-3 pb-1 d-inline-block mb-3">Mechanical Engineering</h5>
+                                <p class="text-justify text-muted" style="line-height: 1.8;">
+                                    The Department of Mechanical Engineering at NERIST, Nirjuli is a core academic unit committed to producing skilled technical
+                                    manpower through its unique modular education system.
+                                </p>
+                                <div class="collapse" id="mechDeptCollapse">
+                                    <p class="text-justify text-muted mt-2" style="line-height: 1.8;">
+                                        The department offers certificate, diploma, and degree programs, with a curriculum for the
+                                        degree module that is at par with premier engineering institutions in the country. Emphasis
+                                        is placed on developing strong fundamentals along with practical skills in servicing,
+                                        maintenance, troubleshooting, and supervisory functions to meet the evolving needs of
+                                        industry and society.
+                                    </p>
+                                    <p class="text-justify text-muted mt-2" style="line-height: 1.8;">
+                                        The department is supported by 12 well-equipped laboratories and 6 specialized workshops,
+                                        providing hands-on exposure to advanced machines and modern experimental facilities. It is
+                                        staffed by a team of highly qualified and experienced faculty membersâ€”Ph.D. holders and
+                                        postgraduates from reputed institutes such as IITs, ISM, NITs, and Jadavpur Universityâ€”along
+                                        with motivated young faculty and dedicated technical staff. A warm, collaborative academic
+                                        environment and a strong focus on applied learning, research, and innovation enable the
+                                        department to contribute effectively to education, research, and national development.
+                                    </p>
+                                </div>
+                                <div class="text-start mt-2">
+                                    <button class="btn btn-sm btn-light text-primary fw-bold rounded-pill px-3 shadow-sm border" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#mechDeptCollapse" aria-expanded="false" aria-controls="mechDeptCollapse"
+                                        onclick="toggleReadMore(this)">
+                                        Read More
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracks of Conference -->
+    <section class="section-padding bg-light position-relative">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Tracks Of Conference</h2>
+                <p class="text-muted fs-5">Comprehensive roadmap of our conference themes</p>
+            </div>
+            
+            <div class="position-relative py-4" style="max-width: 900px; margin: 0 auto;">
+                <!-- Vertical Line (Desktop only) -->
+                <div class="d-none d-md-block position-absolute" style="top: 0; bottom: 0; left: 50%; width: 4px; background: var(--secondary-color); transform: translateX(-50%); border-radius: 2px; opacity: 0.5;"></div>
+
+                <!-- Track 1 & 2 -->
+                <div class="row align-items-center mb-4 position-relative">
+                    <div class="col-md-5 text-md-end mb-3 mb-md-0 z-1">
+                        <div class="card border-0 shadow rounded-4 p-4" style="border-right: 5px solid var(--secondary-color) !important; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <h5 class="fw-bold text-primary mb-2">Track 1</h5>
+                            <p class="text-muted mb-0 fw-medium">Advanced Geomaterials, Ground Improvement & Intelligent Geotechnics</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center d-none d-md-block z-2">
+                        <div class="d-inline-flex align-items-center justify-content-center text-white fw-bold rounded-circle shadow" style="width: 50px; height: 50px; background: var(--primary-color); border: 4px solid #fff;">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-5 z-1">
+                        <div class="card border-0 shadow rounded-4 p-4" style="border-left: 5px solid var(--accent-color) !important; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <h5 class="fw-bold text-primary mb-2">Track 2</h5>
+                            <p class="text-muted mb-0 fw-medium">Innovative Concrete, Pavement, Structural Materials & Smart Civil Infrastructure</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Track 3 & 4 -->
+                <div class="row align-items-center mb-4 position-relative">
+                    <div class="col-md-5 text-md-end mb-3 mb-md-0 z-1">
+                        <div class="card border-0 shadow rounded-4 p-4" style="border-right: 5px solid var(--accent-color) !important; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <h5 class="fw-bold text-primary mb-2">Track 3</h5>
+                            <p class="text-muted mb-0 fw-medium">Smart, Sustainable & Resilient Infrastructure Materials</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center d-none d-md-block z-2">
+                        <div class="d-inline-flex align-items-center justify-content-center text-white fw-bold rounded-circle shadow" style="width: 50px; height: 50px; background: var(--primary-color); border: 4px solid #fff;">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-5 z-1">
+                        <div class="card border-0 shadow rounded-4 p-4" style="border-left: 5px solid var(--secondary-color) !important; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <h5 class="fw-bold text-primary mb-2">Track 4</h5>
+                            <p class="text-muted mb-0 fw-medium">Advanced Manufacturing, Additive Manufacturing & Hybrid Processing Technologies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Track 5 & 6 -->
+                <div class="row align-items-center mb-4 position-relative">
+                    <div class="col-md-5 text-md-end mb-3 mb-md-0 z-1">
+                        <div class="card border-0 shadow rounded-4 p-4" style="border-right: 5px solid var(--secondary-color) !important; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <h5 class="fw-bold text-primary mb-2">Track 5</h5>
+                            <p class="text-muted mb-0 fw-medium">Nanomaterials, Functional Materials & Emerging Smart Materials</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center d-none d-md-block z-2">
+                        <div class="d-inline-flex align-items-center justify-content-center text-white fw-bold rounded-circle shadow" style="width: 50px; height: 50px; background: var(--primary-color); border: 4px solid #fff;">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-5 z-1">
+                        <div class="card border-0 shadow rounded-4 p-4" style="border-left: 5px solid var(--accent-color) !important; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <h5 class="fw-bold text-primary mb-2">Track 6</h5>
+                            <p class="text-muted mb-0 fw-medium">Mechanical Behavior, Reliability & Failure Analysis of Engineering Materials</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Track 7 & 8 -->
+                <div class="row align-items-center position-relative">
+                    <div class="col-md-5 text-md-end mb-3 mb-md-0 z-1">
+                        <div class="card border-0 shadow rounded-4 p-4" style="border-right: 5px solid var(--accent-color) !important; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <h5 class="fw-bold text-primary mb-2">Track 7</h5>
+                            <p class="text-muted mb-0 fw-medium">Materials for Energy, Environment & Sustainable Technologies</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center d-none d-md-block z-2">
+                        <div class="d-inline-flex align-items-center justify-content-center text-white fw-bold rounded-circle shadow" style="width: 50px; height: 50px; background: var(--primary-color); border: 4px solid #fff;">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-5 z-1">
+                        <div class="card border-0 shadow rounded-4 p-4" style="border-left: 5px solid var(--secondary-color) !important; transition: transform 0.3s; cursor: default;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <h5 class="fw-bold text-primary mb-2">Track 8</h5>
+                            <p class="text-muted mb-0 fw-medium">Data-Driven Materials Engineering, AI/ML, Optimization & Digital Twins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Important Dates Table & Contact Us Section -->
+    <section class="section-padding">
+        <div class="container">
+            <!-- Microsoft CMT Acknowledgement -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card border-0 rounded-4 overflow-hidden shadow-lg position-relative" style="background: linear-gradient(135deg, #ffffff, #f0f4f8);">
+                        <div class="position-absolute opacity-10" style="right: -20px; top: -30px;">
+                            <i class="fab fa-microsoft text-primary" style="font-size: 150px;"></i>
+                        </div>
+                        <div class="card-body p-4 p-md-5 d-flex align-items-center position-relative z-1">
+                            <div class="me-4 d-none d-md-block">
+                                <div class="bg-white p-3 rounded-circle shadow-sm">
+                                    <i class="fab fa-microsoft text-primary" style="font-size: 40px;"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold text-primary mb-2">Powered by Microsoft CMT</h4>
+                                <p class="mb-0 text-dark fw-medium" style="line-height: 1.7;">
+                                    The Microsoft CMT service is proudly used for managing the peer-reviewing process for this
+                                    conference. This premium service was provided for free by Microsoft, bearing all
+                                    expenses including Azure cloud services, software development, and global support.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-stretch g-4">
+                <!-- Important Dates Table -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-lg rounded-4 h-100 overflow-hidden bg-white">
+                        <div class="card-header py-4 text-center text-white" style="background: linear-gradient(135deg, var(--primary-color), #003366);">
+                            <h3 class="mb-0 fw-bold text-white"><i class="far fa-calendar-alt me-2 text-warning"></i> Important Dates</h3>
+                        </div>
+                        <div class="card-body p-0 bg-white">
+                            <table class="table table-hover mb-0 align-middle">
+                                <tbody>
+                                    <tr class="border-bottom">
+                                        <td class="p-4 fw-bold text-dark"><i class="fas fa-file-alt text-secondary me-3"></i> Abstract Submission</td>
+                                        <td class="p-4 text-end fw-bold text-primary">15 October 2026</td>
+                                    </tr>
+                                    <tr class="border-bottom bg-light">
+                                        <td class="p-4 fw-bold text-dark"><i class="fas fa-file-upload text-secondary me-3"></i> Full-length Paper</td>
+                                        <td class="p-4 text-end fw-bold text-primary">20 October 2026</td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <td class="p-4 fw-bold text-dark"><i class="fas fa-check-circle text-secondary me-3"></i> Camera-ready Paper</td>
+                                        <td class="p-4 text-end fw-bold text-primary">25 October 2026</td>
+                                    </tr>
+                                    <tr class="border-bottom bg-light">
+                                        <td class="p-4 fw-bold text-dark"><i class="fas fa-tags text-secondary me-3"></i> Early-bird Registration</td>
+                                        <td class="p-4 text-end fw-bold text-primary">25 October 2026</td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <td class="p-4 fw-bold text-dark"><i class="fas fa-clock text-secondary me-3"></i> After Early Birds</td>
+                                        <td class="p-4 text-end fw-bold text-primary">10 November 2026</td>
+                                    </tr>
+                                    <tr style="background: rgba(252, 163, 17, 0.1);">
+                                        <td class="p-4 fw-bold text-dark"><i class="fas fa-flag-checkered text-danger me-3"></i> Last Registration Date</td>
+                                        <td class="p-4 text-end fw-bold text-danger">10 November 2026</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-lg rounded-4 h-100 overflow-hidden bg-white">
+                        <div class="card-header py-4 text-center text-white" style="background: linear-gradient(135deg, var(--primary-color), #003366);">
+                            <h3 class="mb-0 fw-bold text-white"><i class="fas fa-address-book me-2 text-warning"></i> Contact Us</h3>
+                        </div>
+                        <div class="card-body p-4 p-md-5 position-relative bg-white">
+                            <div class="position-absolute top-0 end-0 p-4 opacity-10 d-none d-sm-block">
+                                <i class="fas fa-envelope-open-text" style="font-size: 6rem;"></i>
+                            </div>
+                            
+                            <h4 class="fw-bold text-primary border-bottom border-warning border-3 pb-2 d-inline-block mb-4">SSAME 2026 Secretariat</h4>
+                            
+                            <div class="d-flex mb-3 align-items-start">
+                                <div class="bg-light p-2 rounded-circle me-3 shadow-sm d-flex align-items-center justify-content-center border" style="width: 45px; height: 45px;">
+                                    <i class="fas fa-map-marker-alt text-danger fs-5"></i>
+                                </div>
+                                <div>
+                                    <p class="mb-1 fw-bold text-dark fs-6">Department of Civil & Mechanical Engineering</p>
+                                    <p class="mb-1 fw-medium text-dark">NERIST, Nirjuli, 791109</p>
+                                    <p class="mb-1 fw-medium text-dark">Arunachal Pradesh, India</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4 align-items-center">
+                                <div class="bg-light p-2 rounded-circle me-3 shadow-sm d-flex align-items-center justify-content-center border" style="width: 45px; height: 45px;">
+                                    <i class="fas fa-envelope text-primary fs-5"></i>
+                                </div>
+                                <div>
+                                    <a href="mailto:ssame.conf@gmail.com" class="text-decoration-none fw-bold fs-5 text-primary" style="transition: 0.3s;" onmouseover="this.style.color='var(--secondary-color)'" onmouseout="this.style.color='var(--primary-color)'">ssame.conf@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <hr class="my-4 opacity-25">
+
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="p-3 bg-light rounded-3 h-100 shadow-sm border" style="border-left: 4px solid var(--primary-color) !important;">
+                                        <h6 class="fw-bold text-dark mb-2">Dr. Neero Gumsar Sorum</h6>
+                                        <p class="mb-1 small fw-bold text-dark"><i class="fas fa-phone-alt me-2 text-success"></i>+91 96157 23864</p>
+                                        <p class="small mb-0 text-truncate" title="sng@nerist.ac.in">
+                                            <i class="fas fa-envelope me-2 text-primary"></i><a href="mailto:sng@nerist.ac.in" class="text-decoration-none text-dark fw-bold">sng@nerist.ac.in</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="p-3 bg-light rounded-3 h-100 shadow-sm border" style="border-left: 4px solid var(--secondary-color) !important;">
+                                        <h6 class="fw-bold text-dark mb-2">Dr. Yadaiah Nirsanametla</h6>
+                                        <p class="mb-1 small fw-bold text-dark"><i class="fas fa-phone-alt me-2 text-success"></i>+91 7330741247</p>
+                                        <p class="small mb-0 text-truncate" title="ny@nerist.ac.in">
+                                            <i class="fas fa-envelope me-2 text-primary"></i><a href="mailto:ny@nerist.ac.in" class="text-decoration-none text-dark fw-bold">ny@nerist.ac.in</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Fee Section -->
+    <section class="py-5 bg-light position-relative">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title fw-bold" style="font-size: 2.5rem;">Registration Fee</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- National Delegates Plan -->
+                <div class="col-12">
+                    <div class="card rounded-4 shadow-sm border-0 bg-white overflow-hidden hover-lift">
+                        <div class="card-header border-0 d-flex justify-content-between align-items-center py-3 px-4 position-relative" style="background: linear-gradient(135deg, var(--secondary-color), #b87300);">
+                            <h3 class="fw-bold text-white mb-0" style="font-size: 1.5rem;">National Delegates</h3>
+                            <span class="text-white opacity-75 fw-medium small">Participants from India</span>
+                        </div>
+                        <div class="card-body p-2 p-md-3">
+                            <div class="table-responsive rounded-3 overflow-hidden border">
+                                <table class="table table-borderless align-middle mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-white text-uppercase fw-bold py-3 px-3 small border-0" style="background-color: var(--primary-color); letter-spacing: 1px;">Category</th>
+                                            <th class="text-white text-uppercase fw-bold py-3 px-3 text-end small border-0" style="background-color: var(--primary-color); letter-spacing: 1px;">Early Bird Registration<br><span class="fw-normal text-lowercase">(up to 25 Oct 2026)</span></th>
+                                            <th class="text-white text-uppercase fw-bold py-3 px-3 text-end small border-0" style="background-color: var(--primary-color); letter-spacing: 1px;">After Early Bird Registration<br><span class="fw-normal text-lowercase">(26 Oct - 10 Nov)</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-bottom">
+                                            <td class="py-2 px-3 fw-bold text-dark"><i class="fas fa-user-tie text-secondary me-2"></i>Academician / Scientist</td>
+                                            <td class="py-2 px-3 text-end fw-bold text-dark fs-6">â‚¹4,720</td>
+                                            <td class="py-2 px-3 text-end fw-medium text-muted fs-6">â‚¹5,900</td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="py-2 px-3 fw-bold text-dark"><i class="fas fa-building text-secondary me-2"></i>Industry Delegate</td>
+                                            <td class="py-2 px-3 text-end fw-bold text-dark fs-6">â‚¹9,440</td>
+                                            <td class="py-2 px-3 text-end fw-medium text-muted fs-6">â‚¹11,800</td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="py-2 px-3 fw-bold text-dark"><i class="fas fa-laptop-code text-secondary me-2"></i>MS / M.Tech / PhD</td>
+                                            <td class="py-2 px-3 text-end fw-bold text-dark fs-6">â‚¹2,950</td>
+                                            <td class="py-2 px-3 text-end fw-medium text-muted fs-6">â‚¹3,540</td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="py-2 px-3 fw-bold text-dark"><i class="fas fa-user-graduate text-secondary me-2"></i>Students</td>
+                                            <td class="py-2 px-3 text-end fw-bold text-dark fs-6">â‚¹1,770</td>
+                                            <td class="py-2 px-3 text-end fw-medium text-muted fs-6">â‚¹2,360</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 px-3 fw-bold text-dark"><i class="fas fa-user-friends text-secondary me-2"></i>Accompanying Person</td>
+                                            <td class="py-2 px-3 text-end fw-bold text-dark fs-6">â‚¹2,360</td>
+                                            <td class="py-2 px-3 text-end fw-medium text-muted fs-6">â‚¹2,360</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- International Delegates Plan -->
+                <div class="col-12">
+                    <div class="card rounded-4 shadow-sm border-0 bg-white overflow-hidden hover-lift">
+                        <div class="card-header border-0 d-flex justify-content-between align-items-center py-3 px-4 position-relative" style="background: linear-gradient(135deg, var(--primary-color), #002244);">
+                            <h3 class="fw-bold text-white mb-0" style="font-size: 1.5rem;">International Delegates</h3>
+                            <div>
+                                <span class="bg-warning text-dark fw-bold px-2 py-1 rounded shadow-sm small me-2">GLOBAL</span>
+                                <span class="text-white opacity-75 fw-medium small">Participants from Overseas</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-2 p-md-3">
+                            <div class="table-responsive rounded-3 overflow-hidden border">
+                                <table class="table table-borderless align-middle mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-white text-uppercase fw-bold py-3 px-3 small border-0" style="background-color: var(--primary-color); letter-spacing: 1px;">Category</th>
+                                            <th class="text-white text-uppercase fw-bold py-3 px-3 text-end small border-0" style="background-color: var(--primary-color); letter-spacing: 1px;">Early Bird Registration<br><span class="fw-medium text-lowercase">(up to 25 Oct 2026)</span></th>
+                                            <th class="text-white text-uppercase fw-bold py-3 px-3 text-end small border-0" style="background-color: var(--primary-color); letter-spacing: 1px;">After Early Bird Registration<br><span class="fw-medium text-lowercase">(26 Oct - 10 Nov)</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-bottom">
+                                            <td class="py-2 px-3 fw-bold text-dark"><i class="fas fa-user-tie text-primary me-2"></i>Academician / Scientist</td>
+                                            <td class="py-2 px-3 text-end fw-bold text-primary fs-6">$200</td>
+                                            <td class="py-2 px-3 text-end fw-medium text-muted fs-6">$250</td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="py-2 px-3 fw-bold text-dark"><i class="fas fa-building text-primary me-2"></i>Industry Delegate</td>
+                                            <td class="py-2 px-3 text-end fw-bold text-primary fs-6">$500</td>
+                                            <td class="py-2 px-3 text-end fw-medium text-muted fs-6">$600</td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="py-2 px-3 fw-bold text-dark"><i class="fas fa-laptop-code text-primary me-2"></i>MS / M.Tech / PhD</td>
+                                            <td class="py-2 px-3 text-end fw-bold text-primary fs-6">$100</td>
+                                            <td class="py-2 px-3 text-end fw-medium text-muted fs-6">$125</td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="py-2 px-3 fw-bold text-dark"><i class="fas fa-user-graduate text-primary me-2"></i>Students</td>
+                                            <td class="py-2 px-3 text-end fw-bold text-primary fs-6">$75</td>
+                                            <td class="py-2 px-3 text-end fw-medium text-muted fs-6">$110</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 px-3 fw-bold text-dark"><i class="fas fa-user-friends text-primary me-2"></i>Accompanying Person</td>
+                                            <td class="py-2 px-3 text-end fw-bold text-primary fs-6">$120</td>
+                                            <td class="py-2 px-3 text-end fw-medium text-muted fs-6">$150</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Link & Button -->
+            <div class="text-center mt-5 pt-4">
+                <a href="assets/downloads/How to make payment_SSAME 2026.pdf"
+                    class="btn btn-primary-custom btn-blinking btn-lg rounded-pill shadow-lg px-5 py-3 mb-5 fw-bold fs-5" style="border: 3px solid #fff;">
+                    <i class="fas fa-credit-card me-2"></i>How to Make payment
+                </a>
+
+                <div class="mt-4 p-4 p-md-5 bg-white rounded-5 shadow-lg border-0 text-start mx-auto position-relative overflow-hidden" style="max-width: 650px;" id="payment-details">
+                    <div class="position-absolute top-0 start-0 w-100" style="height: 6px; background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));"></div>
+                    <div class="d-flex align-items-center justify-content-center mb-3 pb-2 border-bottom">
+                        <div class="bg-light p-2 rounded-circle me-3">
+                            <i class="fas fa-university fa-lg text-primary"></i>
+                        </div>
+                        <h4 class="text-primary mb-0 fw-bold">Bank Account Details</h4>
+                    </div>
+                    
+                    <ul class="list-unstyled ms-2 mb-0 fs-6">
+                        <li class="mb-2 d-flex flex-column flex-sm-row"><strong class="text-dark" style="min-width: 140px;">Bank Name:</strong> <span class="text-muted fw-medium">State Bank of India</span></li>
+                        <li class="mb-2 d-flex flex-column flex-sm-row"><strong class="text-dark" style="min-width: 140px;">Account Name:</strong> <span class="text-muted fw-medium">SSAME - 2026 CONFERENCE NERIST</span></li>
+                        <li class="mb-2 d-flex flex-column flex-sm-row"><strong class="text-dark" style="min-width: 140px;">Account No:</strong> <span class="text-primary fw-bold">45163688100</span></li>
+                        <li class="mb-2 d-flex flex-column flex-sm-row"><strong class="text-dark" style="min-width: 140px;">Account Type:</strong> <span class="text-muted fw-medium">Current Account</span></li>
+                        <li class="mb-2 d-flex flex-column flex-sm-row"><strong class="text-dark" style="min-width: 140px;">Branch:</strong> <span class="text-muted fw-medium">NERIST Nirjuli Branch (18744)</span></li>
+                        <li class="mb-0 d-flex flex-column flex-sm-row"><strong class="text-dark" style="min-width: 140px;">IFSC Code:</strong> <span class="text-danger fw-bold">SBIN0018744</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Countdowns Section -->
+    <section class="py-4 position-relative" style="background: linear-gradient(135deg, var(--primary-color), #002244); overflow: hidden;">
+        <!-- Abstract circles for premium look -->
+        <div class="position-absolute rounded-circle z-0" style="width: 400px; height: 400px; background: rgba(255,255,255,0.03); top: -150px; left: -100px;"></div>
+        <div class="position-absolute rounded-circle z-0" style="width: 300px; height: 300px; background: rgba(255,255,255,0.03); bottom: -100px; right: -50px;"></div>
+
+        <div class="container position-relative z-1 py-2">
+            
+            <div class="row align-items-center bg-white rounded-4 shadow-sm p-3 p-lg-4 mx-2 mx-md-0 mb-4 border-bottom border-4" style="border-bottom-color: var(--secondary-color) !important;">
+                <div class="col-lg-5 text-center text-lg-start mb-3 mb-lg-0 border-end-lg border-2 px-lg-4">
+                    <span class="badge bg-danger px-2 py-1 rounded-pill mb-2 shadow-sm"><i class="fas fa-fire me-1"></i>Hurry Up!</span>
+                    <h2 class="fw-bold text-dark mb-2" style="font-size: 1.8rem;">Conference Starts In</h2>
+                    <p class="text-muted mb-0 fs-6">Don't miss the biggest engineering materials event of the year.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div id="conference-countdown-boxes" class="d-flex justify-content-center justify-content-lg-end gap-2 flex-wrap">
+                        <div class="text-center rounded-3 p-2 shadow-sm border border-2 border-primary" style="min-width: 70px; background: linear-gradient(135deg, var(--primary-color), #002244);">
+                            <span id="conf-days" class="display-6 fw-bold text-white">00</span>
+                            <div class="small text-uppercase fw-bold text-warning" style="font-size: 0.7rem; letter-spacing: 1px;">Days</div>
+                        </div>
+                        <div class="text-center rounded-3 p-2 shadow-sm border border-2 border-primary" style="min-width: 70px; background: linear-gradient(135deg, var(--primary-color), #002244);">
+                            <span id="conf-hours" class="display-6 fw-bold text-white">00</span>
+                            <div class="small text-uppercase fw-bold text-warning" style="font-size: 0.7rem; letter-spacing: 1px;">Hours</div>
+                        </div>
+                        <div class="text-center rounded-3 p-2 shadow-sm border border-2 border-primary" style="min-width: 70px; background: linear-gradient(135deg, var(--primary-color), #002244);">
+                            <span id="conf-mins" class="display-6 fw-bold text-white">00</span>
+                            <div class="small text-uppercase fw-bold text-warning" style="font-size: 0.7rem; letter-spacing: 1px;">Mins</div>
+                        </div>
+                        <div class="text-center rounded-3 p-2 shadow-sm border border-2 border-primary" style="min-width: 70px; background: linear-gradient(135deg, var(--primary-color), #002244);">
+                            <span id="conf-secs" class="display-6 fw-bold text-white">00</span>
+                            <div class="small text-uppercase fw-bold text-warning" style="font-size: 0.7rem; letter-spacing: 1px;">Secs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center bg-white rounded-4 shadow-sm p-3 p-lg-4 mx-2 mx-md-0 border-bottom border-4" style="border-bottom-color: var(--primary-color) !important;">
+                <div class="col-lg-5 text-center text-lg-start mb-3 mb-lg-0 border-end-lg border-2 px-lg-4">
+                    <span class="badge bg-info px-2 py-1 rounded-pill mb-2 shadow-sm"><i class="fas fa-file-upload me-1"></i>Call for Papers</span>
+                    <h2 class="fw-bold text-dark mb-2" style="font-size: 1.8rem;">Submission Deadline</h2>
+                    <p class="text-muted mb-0 fs-6">Submit your research papers before the deadline.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div id="submission-countdown-boxes" class="d-flex justify-content-center justify-content-lg-end gap-2 flex-wrap">
+                        <div class="text-center rounded-3 p-2 shadow-sm border border-2 border-primary" style="min-width: 70px; background: linear-gradient(135deg, var(--primary-color), #002244);">
+                            <span id="sub-days" class="display-6 fw-bold text-white">00</span>
+                            <div class="small text-uppercase fw-bold text-warning" style="font-size: 0.7rem; letter-spacing: 1px;">Days</div>
+                        </div>
+                        <div class="text-center rounded-3 p-2 shadow-sm border border-2 border-primary" style="min-width: 70px; background: linear-gradient(135deg, var(--primary-color), #002244);">
+                            <span id="sub-hours" class="display-6 fw-bold text-white">00</span>
+                            <div class="small text-uppercase fw-bold text-warning" style="font-size: 0.7rem; letter-spacing: 1px;">Hours</div>
+                        </div>
+                        <div class="text-center rounded-3 p-2 shadow-sm border border-2 border-primary" style="min-width: 70px; background: linear-gradient(135deg, var(--primary-color), #002244);">
+                            <span id="sub-mins" class="display-6 fw-bold text-white">00</span>
+                            <div class="small text-uppercase fw-bold text-warning" style="font-size: 0.7rem; letter-spacing: 1px;">Mins</div>
+                        </div>
+                        <div class="text-center rounded-3 p-2 shadow-sm border border-2 border-primary" style="min-width: 70px; background: linear-gradient(135deg, var(--primary-color), #002244);">
+                            <span id="sub-secs" class="display-6 fw-bold text-white">00</span>
+                            <div class="small text-uppercase fw-bold text-warning" style="font-size: 0.7rem; letter-spacing: 1px;">Secs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4" style="background: #000a1f; border-top: 4px solid var(--secondary-color);">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a href="#" class="d-flex align-items-center mb-4 text-white text-decoration-none">
+                        <img src="assets/images/logo.png" alt="Logo" height="50" class="me-3 bg-white rounded-circle p-1 shadow">
+                        <span class="fs-3 fw-bold text-white" style="letter-spacing: 1px;">SSAME 2026</span>
+                    </a>
+                    <p class="text-white opacity-75 mb-4" style="line-height: 1.8;">
+                        International Conference on Smart, Sustainable & Advanced Materials in Engineering. Hosted by NERIST, Arunachal Pradesh.
+                    </p>
+                </div>
+                
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold text-white mb-4 border-bottom border-warning d-inline-block pb-2">Contact Secretariat</h5>
+                    <ul class="list-unstyled text-white opacity-75">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-map-marker-alt mt-1 me-3 text-warning"></i>
+                            <span>Department of Civil & Mechanical Engineering<br>NERIST, Nirjuli, 791109<br>Arunachal Pradesh, India</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="fas fa-envelope me-3 text-warning"></i>
+                            <a href="mailto:ssame.conf@gmail.com" class="text-white text-decoration-none hover-warning transition">ssame.conf@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-white mb-4 border-bottom border-warning d-inline-block pb-2">Connect With Us</h5>
+                    <p class="text-white opacity-75 mb-3">Join our community for the latest updates.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://chat.whatsapp.com/K5yRgVhROoz7ZFUVeLq0XL" target="_blank" class="d-flex align-items-center justify-content-center rounded-circle bg-white bg-opacity-25 text-white hover-lift transition" style="width: 45px; height: 45px;" title="Join WhatsApp Group">
+                            <i class="fab fa-whatsapp fs-4"></i>
+                        </a>
+                        <a href="#" class="d-flex align-items-center justify-content-center rounded-circle bg-white bg-opacity-25 text-white hover-lift transition" style="width: 45px; height: 45px;">
+                            <i class="fab fa-twitter fs-4"></i>
+                        </a>
+                        <a href="#" class="d-flex align-items-center justify-content-center rounded-circle bg-white bg-opacity-25 text-white hover-lift transition" style="width: 45px; height: 45px;">
+                            <i class="fab fa-linkedin-in fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="row pt-4 mt-2 border-top border-white border-opacity-10">
+                <div class="col-12 text-center">
+                    <p class="text-white opacity-50 small mb-0">Â© 2026 SSAME. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js?v=2"></script>
+</body>
+
+</html>
